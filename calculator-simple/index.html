@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Angularjs Simple Calculator</title>
+        <script src="../angular/angular.js" type="text/javascript"></script>
+
+    </head>
+    <body ng-app>
+        How many multiples number ?<br><br>
+        <input type="number" ng-model="bill" 
+        placeholder="Input your first number to calculate" required><br><br>
+        <input type="number" ng-model="bill2" 
+        placeholder="Input your second number to calculate" required><br>
+        <input type="radio" ng-model="amount" ng-value="bill+bill2" 
+        name="hit">Add<br>
+        <input type="radio" ng-model="amount" ng-value="bill-bill2" 
+        name="hit">Minus<br>
+        <input type="radio" ng-model="amount" ng-value="bill*bill2" 
+        name="hit">Multiply<br>
+        <input type="radio" ng-model="amount" ng-value="bill/bill2" 
+        name="hit">Divide<br><br>
+        <button type ="reset" ng-click="amount = 0;">Reset</button>
+        <br>
+        <h1> Result : {{amount}}</h1>
+    </body>
+</html>
