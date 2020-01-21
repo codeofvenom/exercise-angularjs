@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Angularjs Read Coordinate Screen</title>
+        <script src="../angular/angular.js" type="text/javascript"></script>
+        <script src="./src/controller.js" type="text/javascript"></script>
+    </head>
+    <body>
+       <div ng-app='readscreen' ng-controller='operation'>
+           <div style="height: 400px; width: 500px; background: black;"
+           ng-mousemove="mouse($event)">Please move your mouse inside this area</div>
+           <p>amount of x = {{x}} <br> amount of y ={{y}}</p>
+       </div>    
+    </body>
+</html>

@@ -1,0 +1,67 @@
+.apps {
+width: 500px;
+height: 100%;
+position: absolute;
+box-sizing: border-box;;
+background: rgb(213, 239, 246);
+}
+.top {
+  background: brown;
+  padding: 10px;
+}
+.top > b {
+  font-size: 24px;
+  color: white;
+}
+.top > i {
+  font-size: 12px;
+  color: orange;
+}
+#text {
+  height: 40px;
+  width: 80%;
+  font-size: 18px;
+}
+#total {
+  margin: 5px;
+  float: left;
+  margin-left: 10%;
+  height: 30px;
+  margin-top: 10px;
+}
+#tombol {
+  margin: 5px;
+  float: right;
+  margin-right: 10%;
+  height: 30px;
+  font-size: 14px;
+  border-radius: 3px;
+  border: 0;
+  background: rgb(46, 94, 176);
+  color: yellow;
+}
+li {
+  list-style: none;
+  float: left;
+  font-size: 16px;
+  margin-top: 30px;
+  width: 100%;
+}
+li > input {
+  float: left;
+  margin-left: 5%;
+}
+li > button {
+  float: right;
+  border-radius: 50px;
+  background: red;
+  color: yellow;
+  border: 1px solid brown;
+  margin-right: 5%;
+}
+#activity {
+  float: left;
+}
+hr {
+  margin-left: 0;
+}

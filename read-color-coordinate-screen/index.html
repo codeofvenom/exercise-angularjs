@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Angularjs Read Color Coordinate Screen</title>
+        <script src="../angular/angular.js" type="text/javascript"></script>
+        <script src="./src/controller.js" type="text/javascript"></script>
+    </head>
+    <body>
+       <div ng-app='readscreen' ng-controller='operation'>
+           <div style="height: 400px; width: 500px"
+           ng-mousemove="mouse($event)">
+           <div style="height: 100%; width: 100px;background-color: white; float:left;"></div>
+           <div style="height: 100%; width: 100px;background-color: red; float:left;"></div>
+           <div style="height: 100%; width: 100px;background-color: green; float:left;"></div>
+           <div style="height: 100%; width: 100px;background-color: yellow; float:left;"></div>
+           <div style="height: 100%; width: 100px;background-color: blue; float:left;"></div> 
+        </div>
+           <p>amount of x = {{x}} <br> amount of y ={{y}} <br> color = {{color}}</p>
+       </div>    
+    </body>
+</html>

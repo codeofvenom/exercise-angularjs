@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app='todo'>
+<head>
+  <title>To Do List Angular</title>
+  <script src="../angular/angular.js"></script>
+  <script src="./src/controller.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body ng-controller='todoact'>
+  <center class="apps">
+    <div class="top">
+      <b>APPS</b>
+      <br>
+      <i>TODO LIST</i>
+    </div>
+    <br>
+    <input type="text" ng-model='input' id="text" placeholder="Input your Activity and then press Add button">
+    <br>
+    <b id="total">Total Activity : {{count}}</b>
+    <button id='tombol' ng-click='registering()'>Add</button>
+    <br>
+    <li ng-repeat='rg in register as register'>
+      <input type="checkbox">
+      <b id="activity">{{rg}}</b>
+      <button class='button' ng-click='del($index)'>x</button>
+      <br>
+      <hr>
+    </li>
+    </div>
+  </center>
+</body>
+</html>
